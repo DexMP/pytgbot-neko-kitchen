@@ -18,17 +18,38 @@ logger = logging.getLogger(__name__)
 
 # Define a `/start` command handler.
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Send a message with a button that opens a the web app."""
-    await update.message.reply_text(
-        "Please press the button below to choose a color via the WebApp.",
-        reply_markup=ReplyKeyboardMarkup.from_button(
+    keyboard = ReplyKeyboardMarkup.from_button(
             KeyboardButton(
-                text="Open the color picker!",
+                text="🍜  Меню",
+                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
+            ),
+            KeyboardButton(
+                text="🍽 Бронирование стола",
+                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
+            ),
+            KeyboardButton(
+                text="😊 Профиль",
+                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
+            ),
+            KeyboardButton(
+                text="📋 Мои заказы",
+                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
+            ),
+            KeyboardButton(
+                text="🎖 Отзывы",
+                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
+            ),
+            KeyboardButton(
+                text="📍 Наши контакты",
+                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
+            ),
+            KeyboardButton(
+                text="🥺 Рефералка",
                 web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
             ),
             resize_keyboard=True
-        ),
-    )
+        )
+    await update.message.reply_text(reply_markup=keyboard)
 
 
 # Handle incoming WebAppData
