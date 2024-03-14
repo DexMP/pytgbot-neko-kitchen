@@ -379,7 +379,3 @@ tg.MainButton.setText('Корзина').show().onClick(function () {
         Telegram.WebApp.close();
     }
 });
-
-if(summ == 0) {
-    tg.MainButton.setText('Корзина').show();
-}
