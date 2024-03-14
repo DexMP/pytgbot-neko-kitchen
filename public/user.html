@@ -5,25 +5,11 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="currency" content="₽">
     <meta name="scroll" content="0">
-    <title>menu</title>
+    <title>user</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <script type="text/javascript">
-    const colorPicker = new iro.ColorPicker('#picker', {
-        borderColor: "#ffffff",
-        borderWidth: 1,
-        width: Math.round(document.documentElement.clientWidth / 2),
-    });
-    colorPicker.on('color:change', function (color) {
-        document.body.style.background = color.hexString;
-    });
-
-    Telegram.WebApp.ready();
-    Telegram.WebApp.MainButton.setText('Choose Color').show().onClick(function () {
-        const data = JSON.stringify({hex: colorPicker.color.hexString, rgb: colorPicker.color.rgb});
-        Telegram.WebApp.sendData(data);
-        Telegram.WebApp.close();
-    });
+    
 </script>
 <body style="background-color: #ffffff">
 <div style="position: absolute; margin-top: 5vh; margin-left: 5vw; height: 90vh; width: 90vw; border-radius: 5vh; background-color: var(--tg-theme-bg-color); box-shadow: 0 0 2vw

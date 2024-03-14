@@ -6,6 +6,8 @@ from telegram.ext import Application, CommandHandler, ContextTypes, MessageHandl
 
 from config_reader import config
 
+from keyboards.main_keyboard import main_kb as m_kb
+
 # Enable logging
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
@@ -15,41 +17,12 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 
 logger = logging.getLogger(__name__)
 
+markup = ReplyKeyboardMarkup(m_kb, one_time_keyboard=True, resize_keyboard=True)
+
 
 # Define a `/start` command handler.
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    keyboard = ReplyKeyboardMarkup.from_button(
-            KeyboardButton(
-                text="🍜  Меню",
-                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
-            ),
-            KeyboardButton(
-                text="🍽 Бронирование стола",
-                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
-            ),
-            KeyboardButton(
-                text="😊 Профиль",
-                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
-            ),
-            KeyboardButton(
-                text="📋 Мои заказы",
-                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
-            ),
-            KeyboardButton(
-                text="🎖 Отзывы",
-                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
-            ),
-            KeyboardButton(
-                text="📍 Наши контакты",
-                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
-            ),
-            KeyboardButton(
-                text="🥺 Рефералка",
-                web_app=WebAppInfo(url="https://neko-kitchen.ru/"),
-            ),
-            resize_keyboard=True
-        )
-    await update.message.reply_text(reply_markup=keyboard)
+    await update.message.reply_text("Hi" , reply_markup=markup)
 
 
 # Handle incoming WebAppData
@@ -60,8 +33,8 @@ async def web_app_data(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     data = json.loads(update.effective_message.web_app_data.data)
     await update.message.reply_html(
         text=(
-            f"You selected the color with the HEX value <code>{data['hex']}</code>. The "
-            f"corresponding RGB value is <code>{tuple(data['rgb'].values())}</code>."
+            f"Получили {data['hex']}"
+            f"{tuple(data['rgb'].values())}"
         ),
         reply_markup=ReplyKeyboardRemove(),
     )
