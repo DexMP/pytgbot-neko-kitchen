@@ -6,6 +6,6 @@ async def web_app_data(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     data = json.loads(update.effective_message.web_app_data.data)
     await update.message.reply_html(
         text=(
-            f"Получили: {data['test']}"
+            f"{data['test']}"
         )
     )

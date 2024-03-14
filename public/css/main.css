@@ -69,8 +69,8 @@ button {
 
 .card-marker-red {
     position: absolute;
-    margin: 0 100px 200px 0;
-    background: #fa3d3d7c;
+    margin: 0 100px 210px 0;
+    background: #fa3d3dc0;
     padding: 3px 5px;
     color: #ffffff;
     font-size: 12px;
@@ -78,8 +78,8 @@ button {
 
 .card-marker-yellow {
     position: absolute;
-    margin: 0 100px 200px 0;
-    background: #fade3d7c;
+    margin: 0 100px 210px 0;
+    background: #fade3dce;
     padding: 3px 5px;
     color: #ffffff;
     font-size: 12px;
