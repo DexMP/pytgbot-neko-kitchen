@@ -7,24 +7,110 @@
     <meta name="scroll" content="0">
     <title>menu</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <script type="text/javascript" src="js/index.js"></script>
 <body>
-    <div class="tabs-container"></div>
+    <header></header>
     <div class="card-container">
-        <div class="card-coloumn">
-            <div class="card">
-                <img class="card-img" src=""/>
-                <h1 class="card-h1">Title</h1>
-                <p class="card-description">card-description</p>
-                <button class="card-buy-buton" id="ramen">500 ₽</button>
-                <div class="after-buy">
-                    <button id="minus-ramen">-</button>
-                    <div class="buy-col">1</div>
-                    <button id="plus-ramen">+</button>
-                </div>
+        <div class="itemcard-1">
+            <span class="card-marker-red"><code>💥 ХИТ</code></span>
+            <img class="card-img" src="pic/Соба с курицей.jpg"/>
+            <h1 class="card-h1">Соба с курицей</h1>
+            <p class="card-description">Японское блюдо</p>
+            <button class="card-buy-buton" id="1">500 ₽</button>
+            <div class="after-buy" id="ab1">
+                <button class="in-after-buy-button" id="minus-1">-</button>
+                <div class="buy-col" id="col1">1</div>
+                <button class="in-after-buy-button" id="plus-1">+</button>
             </div>
         </div>
+
+        <div class="itemcard-2">
+            <span class="card-marker-yellow"><code>SALE 10%</code></span>
+            <img class="card-img" src="pic/ramen.jpg"/>
+            <h1 class="card-h1">Рамен</h1>
+            <p class="card-description">Японское блюдо</p>
+            <button class="card-buy-buton" id="2">450 ₽</button>
+            <div class="after-buy" id="ab2">
+                <button class="in-after-buy-button" id="minus-2">-</button>
+                <div class="buy-col" id="col2">1</div>
+                <button class="in-after-buy-button" id="plus-2">+</button>
+            </div>
+        </div>
+
+        <div class="itemcard-3">
+            <img class="card-img" src="pic/жареный лук с римсом.jpeg"/>
+            <h1 class="card-h1">Рис с яйцом</h1>
+            <p class="card-description">Китайское блюдо</p>
+            <button class="card-buy-buton" id="3">300 ₽</button>
+            <div class="after-buy" id="ab3">
+                <button class="in-after-buy-button" id="minus-3">-</button>
+                <div class="buy-col" id="col3">1</div>
+                <button class="in-after-buy-button" id="plus-3">+</button>
+            </div>
+        </div>
+
+        <div class="itemcard-4">
+            <img class="card-img" src="pic/салат с креветками и фунчозой.jpeg"/>
+            <h1 class="card-h1">Салат с фунчозой</h1>
+            <p class="card-description">Японское блюдо</p>
+            <button class="card-buy-buton" id="4">420 ₽</button>
+            <div class="after-buy" id="ab4">
+                <button class="in-after-buy-button" id="minus-4">-</button>
+                <div class="buy-col" id="col4">1</div>
+                <button class="in-after-buy-button" id="plus-4">+</button>
+            </div>
+        </div>
+
+        <div class="itemcard-5">
+            <img class="card-img" src="pic/кимчи.jpg"/>
+            <h1 class="card-h1">Кимчи</h1>
+            <p class="card-description">Корейское блюдо</p>
+            <button class="card-buy-buton" id="5">500 ₽</button>
+            <div class="after-buy" id="ab5">
+                <button class="in-after-buy-button" id="minus-5">-</button>
+                <div class="buy-col" id="col5">1</div>
+                <button class="in-after-buy-button" id="plus-5">+</button>
+            </div>
+        </div>
+
+        <div class="itemcard-6">
+            <img class="card-img" src="pic/Спринг-ролл.jpg"/>
+            <h1 class="card-h1">Спринг-ролл</h1>
+            <p class="card-description">Китайское блюдо</p>
+            <button class="card-buy-buton" id="6">450 ₽</button>
+            <div class="after-buy" id="ab6">
+                <button class="in-after-buy-button" id="minus-6">-</button>
+                <div class="buy-col" id="col6">1</div>
+                <button class="in-after-buy-button" id="plus-6">+</button>
+            </div>
+        </div>
+
+        <div class="itemcard-7">
+            <img class="card-img" src="pic/битые огурцы.jpeg"/>
+            <h1 class="card-h1">Битые огурцы</h1>
+            <p class="card-description">Китайское блюдо</p>
+            <button class="card-buy-buton" id="7">220 ₽</button>
+            <div class="after-buy" id="ab7">
+                <button class="in-after-buy-button" id="minus-7">-</button>
+                <div class="buy-col" id="col7">1</div>
+                <button class="in-after-buy-button" id="plus-7">+</button>
+            </div>
+        </div>
+
+        <div class="itemcard-8">
+            <img class="card-img" src="pic/том Ям.jpeg"/>
+            <h1 class="card-h1">Том Ям</h1>
+            <p class="card-description">Тайское блюдо</p>
+            <button class="card-buy-buton" id="8">500 ₽</button>
+            <div class="after-buy" id="ab8">
+                <button class="in-after-buy-button" id="minus-8">-</button>
+                <div class="buy-col" id="col8">1</div>
+                <button class="in-after-buy-button" id="plus-8">+</button>
+            </div>
+        </div>
+
     </div>
 </body>
 <script type="text/javascript">

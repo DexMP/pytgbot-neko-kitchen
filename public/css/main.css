@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--tg-theme-secondary-bg-color);
+    color: var(--tg-theme-text-color);
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 98%;
+    min-height: 100vh;
+}
+
+header {
+    background: var(--tg-theme-header-bg-color);
+}
+
+button {
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+}
+
+.card-buy-buton {
+    width: 75%;
+    height: 40px;
+    border: 0px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+}
+
+.card-h1 {
+    font-size: 20px;
+    margin: 8px 8px 0px 8px;
+}
+
+.card-description {
+    font-size: 14px;
+    margin: 8px 12px 8px 12px;
+    color: var(--tg-theme-hint-color);
+}
+
+.after-buy {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 8px;
+    display: none;
+}
+
+.in-after-buy-button {
+    display: inline-block;
+    width: 35px;
+    text-align: center;
+    vertical-align: center;
+    height: 30px;
+    border: 0px;
+    border-radius: 12px;
+}
+
+.buy-col {
+    color: var(--tg-theme-hint-color);
+    font-size: 12px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid var(--tg-theme-hint-color);
+}
+
+.card-marker-red {
+    position: absolute;
+    margin: 0 100px 200px 0;
+    background: #fa3d3d7c;
+    padding: 3px 5px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.card-marker-yellow {
+    position: absolute;
+    margin: 0 100px 200px 0;
+    background: #fade3d7c;
+    padding: 3px 5px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.card-marker-green {
+    position: absolute;
+    margin: 0 100px 200px 0;
+    background: #fade3d7c;
+    padding: 3px 5px;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+img {
+    max-height:150px;
+    max-width:100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-container {
+    width: 100%;
+    text-align: center;
+    margin: 75px 2px 0 8px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50%, repeat(2, 1fr);
+    row-gap: 25px;
+    column-gap: 20px;
+    justify-items : center;
+
+    grid-template-areas:
+    "A A A A   B B B B"
+    "C C C C   D D D D"
+    "E E E E   F F F F"
+    "G G G G   H H H H";
+}
+
+.itemcard-1 {
+    grid-area: A;
+}
+
+.itemcard-2 {
+    grid-area: B;
+}
+
+.itemcard-3 {
+    grid-area: C;
+}
+
+.itemcard-4 {
+    grid-area: D;
+}
+
+.itemcard-5 {
+    grid-area: E;
+}
+
+.itemcard-6 {
+    grid-area: F;
+}
+
+.itemcard-7 {
+    grid-area: G;
+}
+
+.itemcard-8 {
+    grid-area: H;
+}
+
+[class^="itemcard-"] {
+    background-color: var(--tg-theme-bg-color);
+    border-radius: 12px;
+    display: grid;
+    width: 100%;
+    text-align: center;
+    place-items: center;
+}
+
+
