@@ -18,14 +18,14 @@ btn1.onclick = function(){
     ab1.style.display = "block";
     number1++;
     col1.textContent = number1;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnPlus1.onclick = function(){
     number1++;
     col1.textContent = number1;
     summ = summ + price1;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnMinus1.onclick = function(){
@@ -36,7 +36,7 @@ btnMinus1.onclick = function(){
         if(summ == 0){
             tg.MainButton.setText("Корзина");
         } else {
-            tg.MainButton.setText(summ);
+            tg.MainButton.setText(summ + "₽");
         }
     } if(number1 == 0) {
         cls1();
@@ -64,14 +64,14 @@ btn2.onclick = function(){
     ab2.style.display = "block";
     number2++;
     col2.textContent = number2;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnPlus2.onclick = function(){
     number2++;
     col2.textContent = number2;
     summ = summ + price2;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnMinus2.onclick = function(){
@@ -82,7 +82,7 @@ btnMinus2.onclick = function(){
         if(summ == 0){
             tg.MainButton.setText("Корзина");
         } else {
-            tg.MainButton.setText(summ);
+            tg.MainButton.setText(summ + "₽");
         }
     } if(number2 == 0) {
         cls2();
@@ -109,14 +109,14 @@ btn3.onclick = function(){
     ab3.style.display = "block";
     number3++;
     col3.textContent = number3;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnPlus3.onclick = function(){
     number3++;
     col3.textContent = number3;
     summ = summ + price3;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnMinus3.onclick = function(){
@@ -127,7 +127,7 @@ btnMinus3.onclick = function(){
         if(summ == 0){
             tg.MainButton.setText("Корзина");
         } else {
-            tg.MainButton.setText(summ);
+            tg.MainButton.setText(summ + "₽");
         }
     } if(number3 == 0) {
         cls3();
@@ -155,14 +155,14 @@ btn4.onclick = function(){
     ab4.style.display = "block";
     number4++;
     col4.textContent = number4;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnPlus4.onclick = function(){
     number4++;
     col4.textContent = number4;
     summ = summ + price4;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnMinus4.onclick = function(){
@@ -173,7 +173,7 @@ btnMinus4.onclick = function(){
         if(summ == 0){
             tg.MainButton.setText("Корзина");
         } else {
-            tg.MainButton.setText(summ);
+            tg.MainButton.setText(summ + "₽");
         }
     } if(number4 == 0) {
         cls4();
@@ -200,14 +200,14 @@ btn5.onclick = function(){
     ab5.style.display = "block";
     number5++;
     col5.textContent = number5;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnPlus5.onclick = function(){
     number5++;
     col5.textContent = number5;
     summ = summ + price5;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnMinus5.onclick = function(){
@@ -218,7 +218,7 @@ btnMinus5.onclick = function(){
         if(summ == 0){
             tg.MainButton.setText("Корзина");
         } else {
-            tg.MainButton.setText(summ);
+            tg.MainButton.setText(summ + "₽");
         }
     } if(number5 == 0) {
         cls5();
@@ -246,14 +246,14 @@ btn6.onclick = function(){
     ab6.style.display = "block";
     number6++;
     col6.textContent = number6;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnPlus6.onclick = function(){
     number6++;
     col6.textContent = number6;
     summ = summ + price6;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnMinus6.onclick = function(){
@@ -264,7 +264,7 @@ btnMinus6.onclick = function(){
         if(summ == 0){
             tg.MainButton.setText("Корзина");
         } else {
-            tg.MainButton.setText(summ);
+            tg.MainButton.setText(summ + "₽");
         }
     } if(number6 == 0) {
         cls6();
@@ -292,14 +292,14 @@ btn7.onclick = function(){
     ab7.style.display = "block";
     number7++;
     col7.textContent = number7;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnPlus7.onclick = function(){
     number7++;
     col7.textContent = number7;
     summ = summ + price7;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnMinus7.onclick = function(){
@@ -310,7 +310,7 @@ btnMinus7.onclick = function(){
         if(summ == 0){
             tg.MainButton.setText("Корзина");
         } else {
-            tg.MainButton.setText(summ);
+            tg.MainButton.setText(summ + "₽");
         }
     } if(number7 == 0) {
         cls7();
@@ -337,14 +337,14 @@ btn8.onclick = function(){
     ab8.style.display = "block";
     number8++;
     col8.textContent = number8;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnPlus8.onclick = function(){
     number8++;
     col8.textContent = number8;
     summ = summ + price8;
-    tg.MainButton.setText(summ);
+    tg.MainButton.setText(summ + "₽");
 }
 
 btnMinus8.onclick = function(){
@@ -355,7 +355,7 @@ btnMinus8.onclick = function(){
         if(summ == 0){
             tg.MainButton.setText("Корзина");
         } else {
-            tg.MainButton.setText(summ);
+            tg.MainButton.setText(summ + "₽");
         }
     } if(number8 == 0) {
         cls8();
