@@ -104,12 +104,12 @@ img {
 .card-container {
     width: 100%;
     text-align: center;
-    margin: 75px 2px 0 8px;
+    margin: 75px 4px 10px 4px;
     display: grid;
     gap: 20px;
-    grid-template-columns: 50%, repeat(2, 1fr);
-    row-gap: 25px;
-    column-gap: 20px;
+    grid-template-columns: 45%, repeat(2, 1fr);
+    row-gap: 15px;
+    column-gap: 10px;
     justify-items : center;
 
     grid-template-areas:
