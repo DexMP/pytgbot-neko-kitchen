@@ -20,7 +20,7 @@ body {
 }
 
 form {
-    display: grid;
+    display: block;
 }
 
 button {
