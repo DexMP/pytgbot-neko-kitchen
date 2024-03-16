@@ -370,7 +370,7 @@ function cls8() {
 // tg button
 tg.MainButton.setText('Корзина').show().onClick(function () {
     if(summ == 0) {
-        const data = JSON.stringify({test: "Может позже"});
+        const data = JSON.stringify({test: "0"});
         Telegram.WebApp.sendData(data);
         Telegram.WebApp.close();
     } else {

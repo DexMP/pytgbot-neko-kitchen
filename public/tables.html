@@ -10,7 +10,16 @@
     <link rel="stylesheet" type="text/css" href="css/tables.css">
 </head>
 <body>
-    <script type="text/javascript" src="js/main.js"></script>
+    <div class="form-container">
+        <form>
+            <input type="text" id="naem" placeholder="Имя">
+            <input type="tel" id="phone" placeholder="Номер телефона">
+            <input type="email" id="email" placeholder="Email">
+            <input type="datetime-local" id="date_time" placeholder="Дата и время" value="2024-06-01T08:30">
+            <button id="btnok" type="submit">Забронировать</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/tables.js"></script>
 </body>
 <script type="text/javascript">
     Telegram.WebApp.expand();
