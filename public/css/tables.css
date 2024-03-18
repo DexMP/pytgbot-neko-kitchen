@@ -41,9 +41,9 @@ button {
     color: var(--tg-theme-text-color);
     transition: all 200ms ease;
     border-left: 0 solid transparent;
-    border: 0.5;
+    border: 0;
     height: 5rem;
-    padding: 0 calc(5.8rem * 0.5);
-    border-radius: calc(5.8rem * 0.3);
+    padding: 0 calc(5rem * 0.5);
+    border-radius: calc(5rem * 0.3);
     box-shadow: 0 0 2rem rgb(0, 0, 0, 20%);
 }
