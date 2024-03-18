@@ -22,8 +22,8 @@ async def web_app_data(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
             await update.message.reply_html(
                 text=(
                     f"Бронь успешно создана на имя: {data['username']}\n"
-                    f"Дата и время: {data['date']}\n"
-                    f"Ваш телефон: {data['phone']}"))
+                    f"Дата и время:  \n"
+                    f"Ваш телефон: "))
         except RuntimeWarning as e:
             print(e)
     
