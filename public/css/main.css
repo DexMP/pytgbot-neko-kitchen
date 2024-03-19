@@ -157,7 +157,3 @@ img {
     -moz-box-shadow: 10px 10px 16px 0px rgba(34, 60, 80, 0.3);
     box-shadow: 10px 10px 16px 0px rgba(34, 60, 80, 0.3);
 }
-
-::-webkit-scrollbar {
-    width: 0;
-}
