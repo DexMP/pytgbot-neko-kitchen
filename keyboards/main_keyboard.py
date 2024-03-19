@@ -15,7 +15,7 @@ main_keyboard = [
         KeyboardButton(text= "🥇 Отзывы", web_app=WebAppInfo(url="https://yandex.ru/profile/1343125130"))
     ],
     [
-        KeyboardButton(text= "📍 Наши контакты", web_app=WebAppInfo(url="https://neko-kitchen.ru/"))
+        KeyboardButton(text= "📍 Наши контакты", web_app=WebAppInfo(url="https://neko-kitchen.ru/contacts.html"))
     ],
     [
         KeyboardButton(text= "🥺 Рефералка", web_app=WebAppInfo(url="https://neko-kitchen.ru/"))
