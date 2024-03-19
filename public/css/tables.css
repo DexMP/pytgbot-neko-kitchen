@@ -14,36 +14,151 @@ body {
     vertical-align: middle;
 }
 
-.form-container {
-    margin: 25px;
-}
-
-form {
-    display: block;
-}
-
-button {
-    background: var(--tg-theme-button-color);
-    color: var(--tg-theme-button-text-color);
-    min-height: 75px;
-    border: 0;
-    border-radius: 16px;
-    margin-top: 15px;
-    font-size: 22px;
-}
-  
-  input {
-    font-size: 30px;
+.stable-container {
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 2px;
+}
+
+.free-days {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items : center;
+
+    grid-template-areas:
+    "A A A A   B B B B"
+    "C C C C   D D D D"
+    "E E E E   F F F F"
+    "G G G G   I I I I";
+}
+
+.day-1 {
+    grid-area: A;
+}
+.day-2 {
+    grid-area: B;
+}
+.day-3 {
+    grid-area: C;
+}
+.day-4 {
+    grid-area: D;
+}
+.day-5 {
+    grid-area: E;
+}
+.day-6 {
+    grid-area: F;
+}
+.day-7 {
+    grid-area: G;
+}
+.title-free-days {
+    margin-top: 20px;
+    margin-left: 8px;
+    font-size: 22px;
+    color: var(--tg-theme-hint-color);
+    text-align: start;
+}
+
+.title-free-times {
+    margin-top: 25px;
+    margin-left: 8px;
+    font-size: 22px;
+    color: var(--tg-theme-hint-color);
+    text-align: start;
+}
+
+[class^="day-"] {
+    font-size: 18px;
+    padding: 10px;
     background-color: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color);
-    transition: all 200ms ease;
-    border-left: 0 solid transparent;
-    border: 0;
-    height: 5rem;
-    padding: 0 calc(5rem * 0.5);
-    border-radius: calc(5rem * 0.3);
-    box-shadow: 0 0 2rem rgb(0, 0, 0, 20%);
+    border-radius: 12px;
+    display: grid;
+    width: 150px;
+    text-align: center;
+    place-items: center;
+    cursor: pointer;
+}
+
+[class^="day-"]:hover {
+    background: var(--tg-theme-button-color);
+}
+
+
+.free-times {
+    margin-top: 25px;
+    margin-bottom: 50px;
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+    row-gap: 25px;
+    column-gap: 0px;
+    justify-items : center;
+
+    grid-template-areas:
+    "A A A A   B B B B   C C C C   D D D D"
+    "E E E E   F F F F   G G G G   H H H H";
+}
+
+[class^="time-"] {
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    background-color: var(--tg-theme-bg-color);
+    border-radius: 12px;
+    display: grid;
+    width: 75px;
+    text-align: center;
+    place-items: center;
+    cursor: pointer;
+}
+
+[class^="time-"] {
+    font-size: 18px;
+    padding: 5px 10px 5px 10px;
+    background-color: var(--tg-theme-bg-color);
+    border-radius: 12px;
+    display: grid;
+    width: 75px;
+    text-align: center;
+    place-items: center;
+    cursor: pointer;
+}
+
+[class^="time-"]:hover {
+    background: var(--tg-theme-button-color);
+}
+.time-1 {
+    grid-area: A;
+}
+.time-2 {
+    grid-area: B;
+}
+.time-3 {
+    grid-area: C;
+}
+.time-4 {
+    grid-area: D;
+}
+.time-5 {
+    grid-area: E;
+}
+.time-6 {
+    grid-area: F;
+}
+.time-7 {
+    grid-area: G;
+}
+.time-8 {
+    grid-area: H;
+}
+
+::-webkit-scrollbar {
+    width: 0;
 }

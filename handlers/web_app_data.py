@@ -6,7 +6,15 @@ async def web_app_data(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     data = json.loads(update.effective_message.web_app_data.data)
     user = update.message.from_user
     button = update.effective_message.web_app_data.button_text
-    if (button == "🍜  Меню"):
+    if (button == "🍽 Бронирование стола"):
+        try:
+            await update.message.reply_html(
+                text=(
+                    f"Бронь успешно создана на имя: {user.first_name}\n\n"
+                    f"Ждём Вас в {data['brodate']} к {data['brotime']}"))
+        except RuntimeWarning as e:
+            print(e)
+    elif (button == "🍜  Меню"):
         try:
             if (data['summ']):
                 await update.message.reply_html(
@@ -17,14 +25,5 @@ async def web_app_data(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
                 await update.message.reply_html(text="Заказ не был добавлен!")
         except:
             print('have problem in give summ')
-    if (button == "🍽 Бронирование стола"):
-        try:
-            await update.message.reply_html(
-                text=(
-                    f"Бронь успешно создана на имя: {data['username']}\n"
-                    f"Дата и время:  \n"
-                    f"Ваш телефон: "))
-        except RuntimeWarning as e:
-            print(e)
     
     
