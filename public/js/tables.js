@@ -35,8 +35,8 @@ day1.onclick = function() {
     clearStyleDays();
     clearStyleTimes();
     day1.style.background = 'var(--tg-theme-button-color)';
-    date = "Понедельник";
-    tg.MainButton.setText('Забронировать на ' + stabler(date));
+    date = stabler(day1.textContent);
+    tg.MainButton.setText('Забронировать на ' + date);
     weekend(false);
 }
 
@@ -44,8 +44,8 @@ day2.onclick = function() {
     clearStyleDays();
     clearStyleTimes();
     day2.style.background = 'var(--tg-theme-button-color)';
-    date = "Вторник";
-    tg.MainButton.setText('Забронировать на ' + stabler(date));
+    date = stabler(day2.textContent);
+    tg.MainButton.setText('Забронировать на ' + date);
     weekend(false);
 }
 
@@ -53,8 +53,8 @@ day3.onclick = function() {
     clearStyleDays();
     clearStyleTimes();
     day3.style.background = 'var(--tg-theme-button-color)';
-    date = "Среда";
-    tg.MainButton.setText('Забронировать на ' + stabler(date));
+    date = stabler(day3.textContent);
+    tg.MainButton.setText('Забронировать на ' + date);
     weekend(false);
 }
 
@@ -62,8 +62,8 @@ day4.onclick = function() {
     clearStyleDays();
     clearStyleTimes();
     day4.style.background = 'var(--tg-theme-button-color)';
-    date = "Четверг";
-    tg.MainButton.setText('Забронировать на ' + stabler(date));
+    date = stabler(day4.textContent);
+    tg.MainButton.setText('Забронировать на ' + date);
     weekend(false);
     
 }
@@ -72,8 +72,8 @@ day5.onclick = function() {
     clearStyleDays();
     clearStyleTimes();
     day5.style.background = 'var(--tg-theme-button-color)';
-    date = "Пятница";
-    tg.MainButton.setText('Забронировать на ' + stabler(date));
+    date = stabler(day5.textContent);
+    tg.MainButton.setText('Забронировать на ' + date);
     weekend(false);
 }
 
@@ -81,8 +81,8 @@ day6.onclick = function() {
     clearStyleDays();
     clearStyleTimes();
     day6.style.background = 'var(--tg-theme-button-color)';
-    date = "Суббота";
-    tg.MainButton.setText('Забронировать на ' + stabler(date));
+    date = stabler(day6.textContent);
+    tg.MainButton.setText('Забронировать на ' + date);
     weekend(true);
 }
 
@@ -91,7 +91,7 @@ day7.onclick = function() {
     clearStyleTimes();
     day7.style.background = 'var(--tg-theme-button-color)';
     date = stabler(day7.textContent);
-    tg.MainButton.setText('Забронировать на ' + stabler(date));
+    tg.MainButton.setText('Забронировать на ' + date);
     weekend(true);
 }
 
